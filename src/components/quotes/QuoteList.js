@@ -7,9 +7,9 @@ import classes from './QuoteList.module.css';
 const sortQuotes = (quotes, ascending) =>
   quotes.sort((quoteA, quoteB) => {
     if (ascending) {
-      return quoteA.id > quoteB.id ? 1 : -1;
+      return quoteA.text > quoteB.text ? 1 : -1;
     } else {
-      return quoteA.id < quoteB.id ? 1 : -1;
+      return quoteA.text < quoteB.text ? 1 : -1;
     }
   });
 
